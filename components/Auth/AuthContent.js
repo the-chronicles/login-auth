@@ -20,7 +20,7 @@ function AuthContent({ isLogin, onAuthenticate }) {
     if (isLogin) {
       navigation.navigate("Signup");
     } else {
-      navigation.navigate("Login");
+      navigation.navigate("Login"); 
     }
   }
 
