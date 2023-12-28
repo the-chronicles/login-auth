@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'AIzaSyDCYasArcOwcALFhIj2szug5aD2PgUQu1E'
+const API_KEY = 'AIzaSyCUUpkfOLgT-PWG3V1D2e_DG5mxPq4uCtM'
 
 export async function createUser(email, password) {
   const response = await axios.post(
