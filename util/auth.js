@@ -8,6 +8,8 @@ async function authenticate(mode, email, password) {
     password: password,
     returnSecureToken: true,
   });
+
+  console.log(response.data)
 }
 
 const API_KEY = "AIzaSyCUUpkfOLgT-PWG3V1D2e_DG5mxPq4uCtM";
@@ -16,6 +18,6 @@ export async function createUser(email, password) {
   await authenticate("signup", email, password);
 }
 
-async function login(email, password) {
+export async function login(email, password) {
   await authenticate("signInWithPassword", email, password);
 }
